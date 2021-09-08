@@ -15,7 +15,18 @@ html {
   --body-color: #fff;
   --text-color: #161C2D;
   --font-nunito: 'Nunito Sans', sans-serif;
-  --box-bg: blue;
+}
+
+.dark-color{
+  --pemary-color: #161C2D;
+  --body-color: #161C2D;
+  --text-color: #fff;
+}
+
+.light-color{
+  --pemary-color: #fff;
+  --body-color: #fff;
+  --text-color: #161C2D;  
 }
 
 ul{
@@ -99,8 +110,7 @@ nav{
 #dark-light{
   top: 40%;
   right: 0;
-  position: fixed;
-  overflow-x: hidden;
+  position: absolute;
 }
 
 .cev #dark-light{
@@ -111,11 +121,10 @@ nav{
   width: 162.27px;
   height: 106px;
   background-color: #495FEF;
-  position: relative;
 }
 
 .dark-btn{
-  position: relative;
+  position: absolute;
   background-image: url('../img/down.svg');
   transform: rotateZ(-90deg);
   width: 50px;
@@ -123,6 +132,6 @@ nav{
   background-repeat: no-repeat;
   background-position: top 1px left 12px;
   border: none;
-  top: 10px;
-  left: -10px;
+  top: 44px;
+  left: -41px;
 }

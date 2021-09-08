@@ -35,16 +35,21 @@
       <button class="dark-btn"></button>
       <div class="dark-div">
         <p class="dark-text">Change Version</p>
-        <button class="darks-btn">LIGHT</button>
-        <button class="darks-btn">DARK</button>
+        <button class="darks-btn1">LIGHT</button>
+        <button class="darks-btn2">DARK</button>
       </div>
     </section>
+    
   </main>
 
   <script>
-    let darkLightbtn = document.querySelector('.dark-btn');
-    darkLightbtn.addEventListener('click', function () {
+    let rightbtn = document.querySelector('.dark-btn');
+    rightbtn.addEventListener('click', function () {
       document.body.classList.toggle('cev');
+    })
+    let darkLightbtn = document.querySelector('.darks-btn2');
+    darkLightbtn.addEventListener('click', function () {
+      document.body.classList.toggle('dark-color');
     })
   </script>
 </body>

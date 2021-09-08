@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folio</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://col-css.netlify.app/css/column.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <header>
+    <div class="fulled-container">
+      <div class="header row between">
+        <div class="logo">
+          <a href="index.html" class="logo">folio.</a>
+        </div>
+        <nav>
+          <ul class="nav-list row">
+            <li class="nav-item"><a href="#" class="nav-link downb">creative demos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link downb">pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">about me.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">contact.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">support.</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="dark-light">
+      <button class="dark-btn"></button>
+      <div class="dark-div">
+        <p class="dark-text">Change Version</p>
+        <button class="darks-btn">LIGHT</button>
+        <button class="darks-btn">DARK</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let darkLightbtn = document.querySelector('.dark-btn');
+    darkLightbtn.addEventListener('click', function () {
+      document.body.classList.toggle('cev');
+    })
+  </script>
+</body>
+</html>

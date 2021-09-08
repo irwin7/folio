@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pemary-color: #fff;
+  --body-color: #fff;
+  --text-color: #161C2D;
+  --font-nunito: 'Nunito Sans', sans-serif;
+  --box-bg: blue;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-color);
+  font-family: var(--font-nunito);
+  perspective: 1000px;
+  transition: all 0.4s ease;
+}
+
+.header{
+  align-items: center;
+  height: 76px;
+  position: relative;
+  padding: .5rem 1rem;
+  position: fixed;
+  box-shadow: rgb(65 62 101 / 10%) 0px 12px 34px -11px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.logo{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+nav{
+  position: relative;
+  margin-left: auto;
+}
+
+.nav-link{
+  transition: all 0.4s ease 0s;
+  align-items: center;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: var(--text-color) !important;
+  
+}
+
+.nav-item{
+  padding: 18px !important;
+
+}
+
+.downb{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.downb::after{
+  content: "";
+  display: inline-block;
+  background-image: url('../img/down.svg');
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+#dark-light{
+  top: 40%;
+  right: 0;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.cev #dark-light{
+  right: -156px;
+}
+
+.dark-div{
+  width: 162.27px;
+  height: 106px;
+  background-color: #495FEF;
+  position: relative;
+}
+
+.dark-btn{
+  position: relative;
+  background-image: url('../img/down.svg');
+  transform: rotateZ(-90deg);
+  width: 50px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: top 1px left 12px;
+  border: none;
+  top: 10px;
+  left: -10px;
+}
